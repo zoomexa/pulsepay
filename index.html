@@ -1,0 +1,293 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PulsePay - Seamless Virtual Payments</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #fff6f6;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #b3001b, #d91a3c, #ff4d4f);
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 28px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 24px;
+      text-decoration: none;
+      font-size: 16px;
+      transition: opacity 0.3s;
+    }
+
+    nav a:hover {
+      opacity: 0.85;
+    }
+
+    .hero {
+      padding: 80px 20px;
+      text-align: center;
+      background: linear-gradient(to right, #ff4d4f, #d91a3c, #b3001b);
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .hero button {
+      background: white;
+      color: #b3001b;
+      padding: 14px 28px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .hero button:hover {
+      background: #ffe6e6;
+    }
+
+    .features {
+      display: flex;
+      justify-content: space-around;
+      padding: 60px 20px;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .feature-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(179, 0, 27, 0.1);
+      padding: 30px;
+      width: 300px;
+      text-align: center;
+    }
+
+    .feature-card h3 {
+      color: #b3001b;
+      margin-bottom: 10px;
+    }
+
+    .feature-card p {
+      color: #555;
+    }
+
+    .how-it-works {
+      padding: 60px 20px;
+      background: #fff0f0;
+      text-align: center;
+    }
+
+    .how-it-works h2 {
+      font-size: 28px;
+      margin-bottom: 30px;
+      color: #b3001b;
+    }
+
+    .steps {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .step {
+      width: 260px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(179, 0, 27, 0.1);
+    }
+
+    .step h4 {
+      color: #d91a3c;
+      margin-bottom: 8px;
+    }
+
+    .step p {
+      font-size: 15px;
+      color: #555;
+    }
+
+    footer {
+      background: #b3001b;
+      color: white;
+      padding: 40px 20px;
+    }
+
+    .footer-grid {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .footer-col {
+      margin-bottom: 20px;
+      width: 200px;
+    }
+
+    .footer-col h4 {
+      margin-bottom: 12px;
+    }
+
+    .footer-col a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      margin: 6px 0;
+      font-size: 14px;
+      opacity: 0.85;
+    }
+
+    .footer-col a:hover {
+      opacity: 1;
+    }
+
+    .socials {
+      margin-top: 20px;
+    }
+
+    .socials a {
+      margin-right: 12px;
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .features, .steps, .footer-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .feature-card, .step {
+        width: 100%;
+        max-width: 340px;
+      }
+
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        margin-top: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>PulsePay</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Virtual Card</a>
+    <a href="#">Pricing</a>
+    <a href="#">Support</a>
+    <a href="#">Login</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Your All-in-One Virtual Card Solution</h2>
+  <p>Instantly create and manage secure, dual-currency virtual cards powered by Mastercard.</p>
+  <button>Get Started</button>
+</section>
+
+<section class="features">
+  <div class="feature-card">
+    <h3>Instant Activation</h3>
+    <p>Create virtual cards within seconds and start using them immediately.</p>
+  </div>
+  <div class="feature-card">
+    <h3>Secure & Private</h3>
+    <p>Built-in CVV toggle and card freezing to keep your data protected.</p>
+  </div>
+  <div class="feature-card">
+    <h3>Dual Currency</h3>
+    <p>Use USD and EUR on the same card for global convenience.</p>
+  </div>
+</section>
+
+<section class="how-it-works">
+  <h2>How PulsePay Works</h2>
+  <div class="steps">
+    <div class="step">
+      <h4>1. Sign Up</h4>
+      <p>Create a PulsePay account with your email in just a minute.</p>
+    </div>
+    <div class="step">
+      <h4>2. Fund Wallet</h4>
+      <p>Top up your wallet via bank, crypto, or card transfer.</p>
+    </div>
+    <div class="step">
+      <h4>3. Create Card</h4>
+      <p>Generate a virtual Mastercard and start transacting worldwide.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-col">
+      <h4>PulsePay</h4>
+      <p>Powerful virtual cards for modern payments.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="#">About Us</a>
+      <a href="#">Careers</a>
+      <a href="#">Terms</a>
+      <a href="#">Privacy</a>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <a href="#">Help Center</a>
+      <a href="#">Contact Us</a>
+      <a href="#">FAQs</a>
+    </div>
+    <div class="footer-col">
+      <h4>Follow Us</h4>
+      <div class="socials">
+        <a href="#">🌐</a>
+        <a href="#">🐦</a>
+        <a href="#">📘</a>
+        <a href="#">📸</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
