@@ -190,7 +190,7 @@
         align-items: center;
       }
 
-      .feature-card, .step {
+      .feature-card, .step, .footer-col {
         width: 100%;
         max-width: 340px;
       }
@@ -198,10 +198,53 @@
       header {
         flex-direction: column;
         text-align: center;
+        padding: 20px;
       }
 
       nav {
         margin-top: 12px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      nav a {
+        margin: 8px 12px;
+      }
+
+      .hero h2 {
+        font-size: 32px;
+      }
+
+      .hero p {
+        font-size: 18px;
+      }
+
+      .hero button {
+        padding: 12px 24px;
+        font-size: 15px;
+      }
+
+      .how-it-works h2 {
+        font-size: 24px;
+      }
+
+      .step h4 {
+        font-size: 18px;
+      }
+
+      .footer-col {
+        text-align: center;
+      }
+
+      .socials {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .socials a {
+        margin: 8px;
       }
     }
   </style>
@@ -211,11 +254,11 @@
 <header>
   <h1>PulsePay</h1>
   <nav>
-    <a href="#">Home</a>
+    <a href="https://zoomexa.github.io/pulsepay/">Home</a>
     <a href="#">Virtual Card</a>
     <a href="#">Pricing</a>
     <a href="#">Support</a>
-    <a href="#">Login</a>
+    <a href="https://zoomexa.github.io/pulsepay/login.html">Login</a>
   </nav>
 </header>
 
@@ -236,7 +279,7 @@
   </div>
   <div class="feature-card">
     <h3>Dual Currency</h3>
-    <p>Use USD and EUR on the same card for global convenience.</p>
+    <p>Use USD and BDT on the same card for global convenience.</p>
   </div>
 </section>
 
@@ -267,15 +310,12 @@
     <div class="footer-col">
       <h4>Company</h4>
       <a href="#">About Us</a>
-      <a href="#">Careers</a>
       <a href="#">Terms</a>
       <a href="#">Privacy</a>
     </div>
     <div class="footer-col">
       <h4>Support</h4>
       <a href="#">Help Center</a>
-      <a href="#">Contact Us</a>
-      <a href="#">FAQs</a>
     </div>
     <div class="footer-col">
       <h4>Follow Us</h4>
