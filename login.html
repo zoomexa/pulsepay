@@ -11,7 +11,7 @@
   <div class="bg-white p-8 rounded-2xl shadow-2xl w-full max-w-sm">
     <h2 class="text-3xl font-bold text-center text-red-600 mb-6">PulsePay Login</h2>
     
-    <form action="#" method="POST" class="space-y-4">
+    <form id="loginForm" class="space-y-4">
       <div>
         <label for="email" class="block text-sm font-semibold text-gray-700">Email</label>
         <input type="email" id="email" name="email" required class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400">
@@ -22,11 +22,27 @@
         <input type="password" id="password" name="password" required class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400">
       </div>
       
-      <button href="https://zoomexa.github.io/pulsepay/download.html" type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-2 rounded-lg transition duration-200">
+      <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-2 rounded-lg transition duration-200">
         Login
       </button>
     </form>
   </div>
+
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", function (e) {
+      e.preventDefault(); // prevent default form submission
+      
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+
+      if (email && password) {
+        // Redirect if both fields are filled
+        window.location.href = "https://zoomexa.github.io/pulsepay/download.html";
+      } else {
+        alert("Please fill out both fields.");
+      }
+    });
+  </script>
 
 </body>
 </html>
